@@ -1,4 +1,4 @@
-package examples;
+package com.example.examples;
 
 public class Mouth {
 
