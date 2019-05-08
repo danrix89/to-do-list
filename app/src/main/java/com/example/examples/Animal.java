@@ -1,4 +1,4 @@
-package examples;
+package com.example.examples;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,11 +34,14 @@ public class Animal {
         // until a condition is met. The condition in this case, will be that we've reached the numberOfLegs.
         // This is called a "for loop" which has 3 parts.
         // 1) The first part shows that you're creating a local variable called "i" that is an "int" (integer)
-        // that tracks the index of where you are in the loop. (int i = 0;)
-        // 2) The second part is the condition that must be true in order to stop the loop. (i <= numberOfLegs;)
-        // 3) The third part
-        for (int i = 0; i <= numberOfLegs; i++) {
-            legs.add(new Leg());
+        // that tracks the index of where you are in the loop. (int i = 0;) The first part only gets called once.
+        // 2) The second part is the condition that must be true in order to keep the loop going. While the condition is true, we keep
+        // looping. (i <= numberOfLegs;)
+        // 3) The third part increments the "i" by one. (i++)
+        // The loop mechanism calls step 1 then step 2, then step three. It repeats calling steps 2 and 3 until the condition is met.
+        for (int i = 0; i < numberOfLegs; i++) {
+            // Whatever happens inside of these "curly-braces" is executed each time the loop repeats
+            this.legs.add(new Leg());
         }
     }
 
@@ -59,5 +62,13 @@ public class Animal {
         for (Leg leg : legs) {
             leg.move();
         }
+    }
+
+    public Mouth getMouth() {
+        return mouth;
+    }
+
+    public List<Leg> getLegs() {
+        return legs;
     }
 }

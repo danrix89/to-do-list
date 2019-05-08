@@ -8,7 +8,8 @@ public class Task {
     /**
      * This builds a new Task object in memory using a given "name" parameter and defaults the
      * completed flag to false, because all new tasks are initially incomplete.
-     * @param name The name of the task to complete or to-do
+     * @param name The name of the task to complete or to-do (It's a "String" which means its
+     *             something made of one or more alphanumeric characters).
      */
     public Task(String name) {
         this.name = name;
