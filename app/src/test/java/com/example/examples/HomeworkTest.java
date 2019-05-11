@@ -11,7 +11,22 @@ public class HomeworkTest {
 
         Human matt = new Human("Matt");
         System.out.println("This human has this many legs: " + matt.getLegs().size());
-        System.out.println("This human's name is: " + matt.getFirstName());
+        System.out.println("This human's name is " + matt.getFirstName());
+
+        Insect butterfly = new Insect(2);
+        System.out.println("The insect has" + butterfly.getAntenna() + "antenna");
+
+        Butterfly monarch = new Butterfly("orange");
+        System.out.println("This Monarch's wings are " + monarch.getColor());
+
+        Monarch steve = new Monarch(2);
+        System.out.println("This Monarch also has" + steve.getEyes() + "eyes");
+
+        Male greg = new Male("big");
+        System.out.println("Greg has" + greg.getmuscles() + "muscles");
+
+        Female sally = new Female(2);
+        System.out.println("Sally has" + sally.gethands() + "hands");
 
         // Homework:
         // Make an insect class
