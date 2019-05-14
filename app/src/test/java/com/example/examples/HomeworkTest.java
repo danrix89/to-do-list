@@ -20,7 +20,7 @@ public class HomeworkTest {
         System.out.println("This Monarch's wings are " + monarch.getColor());
 
         Monarch steve = new Monarch(2);
-        System.out.println("This Monarch also has" + steve.getEyes() + "eyes");
+        System.out.println("This Monarch also has" + steve.getEyes() + " big eyes");
 
         Male greg = new Male("big");
         System.out.println("Greg has" + greg.getmuscles() + "muscles");
