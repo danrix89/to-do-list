@@ -13,4 +13,12 @@ public class FlyingInsect extends Insect {
         return wings;
     }
 
+
+    public String fly(String flap) {
+        String result = flap;
+
+        result += " wings";
+
+        return result;
+    }
 }

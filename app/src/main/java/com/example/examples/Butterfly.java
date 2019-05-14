@@ -11,4 +11,12 @@ public class Butterfly extends FlyingInsect {
     public String getColor() {
         return color;
     }
+
+    public String drink (String extend ) {
+        String result = extend;
+
+        result += " probiscus";
+
+        return result;
+    }
 }

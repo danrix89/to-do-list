@@ -10,5 +10,16 @@ public class Monarch extends Butterfly {
 
     public int getEyes(){return eyes;}
 
+    public String look (String openEyes) {
+        String result = openEyes;
+        openEyes(" opened eyes");
+        result += " and looked around";
+
+        return result;
+    }
+
+    private void openEyes(String s) {
+    }
+
 }
 

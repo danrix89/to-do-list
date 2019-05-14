@@ -10,6 +10,17 @@ public class Female extends Human {
             this.hands = hands;
         }
 
+    public Integer gather() {
+        Integer itemsGathered;
+
+        itemsGathered = 3;
+
+        return itemsGathered;
+    }
+
+    
+        
+        
         public int gethands(){return hands;}
 
 }
