@@ -1,7 +1,7 @@
 package com.example.examples;
 
 public class Butterfly extends FlyingInsect {
-    public String color;
+    private String color;
 
     public Butterfly(String color) {
         super(2);
@@ -12,11 +12,8 @@ public class Butterfly extends FlyingInsect {
         return color;
     }
 
-    public String drink (String extend ) {
-        String result = extend;
+    public void drink (String flowerType) {
+        System.out.println("The " + color + " butterfly extends its probiscus into a " + flowerType + " flower");
 
-        result += " probiscus";
-
-        return result;
     }
 }

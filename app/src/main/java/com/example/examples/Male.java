@@ -4,9 +4,13 @@ public class Male extends Human {
 
     private String muscles;
 
-    public Male(String muscles) {
-        super("Greg");
-        this.muscles = muscles;
+    public Male(Integer age, String firstName) {
+        super(firstName);
+        if (age > 50) {
+            this.muscles = "weak";
+        } else {
+            this.muscles = "strong";
+        }
     }
 
     public String getmuscles() {

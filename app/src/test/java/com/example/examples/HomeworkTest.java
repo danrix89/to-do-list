@@ -6,27 +6,30 @@ public class HomeworkTest {
 
     @Test
     public void homework001() {
-        Animal octopus = new Animal(8);
-        System.out.println("The animal has this many legs: " + octopus.getLegs().size());
+        Animal animal = new Animal(8);
+        System.out.println("The animal has this many legs: " + animal.getLegs().size());
 
-        Human matt = new Human("Matt");
-        System.out.println("This human has this many legs: " + matt.getLegs().size());
-        System.out.println("This human's name is " + matt.getFirstName());
+        Human human = new Human("Matt");
+        System.out.println("This human has this many legs: " + human.getLegs().size());
+        System.out.println("This human's name is " + human.getFirstName());
 
-        Insect butterfly = new Insect(2);
-        System.out.println("The insect has" + butterfly.getAntenna() + "antenna");
+        Insect insect = new Insect(2);
+        System.out.println("The insect has " + insect.getAntenna() + " antenna");
 
-        Butterfly monarch = new Butterfly("orange");
-        System.out.println("This Monarch's wings are " + monarch.getColor());
+        Butterfly butterfly = new Butterfly("orange");
+        System.out.println("This Butterfly's wings are " + butterfly.getColor());
+        butterfly.drink( "lilly");
+        butterfly.drink( "daisy");
 
-        Monarch steve = new Monarch(2);
-        System.out.println("This Monarch also has" + steve.getEyes() + " big eyes");
+        Monarch monarch = new Monarch(2);
+        System.out.println("This Monarch has " + monarch.getEyes() + " big eyes and it's color is " + monarch.getColor());
 
-        Male greg = new Male("big");
-        System.out.println("Greg has" + greg.getmuscles() + "muscles");
+        Male male = new Male(25, "Matt");
+        System.out.println("This male's name is: " + male.getFirstName());
+        System.out.println(male.getFirstName() + " has " + male.getmuscles() + " muscles");
 
         Female sally = new Female(2);
-        System.out.println("Sally has" + sally.gethands() + "hands");
+        System.out.println("Sally has " + sally.gethands() + " hands");
 
         // Homework:
         // Make an insect class
@@ -41,3 +44,4 @@ public class HomeworkTest {
     }
 
 }
+//3 household objects that need to be modeled. one method, one member variable
