@@ -64,6 +64,30 @@ public class Animal {
         }
     }
 
+    public void nameOfMethod(String value) {
+        // anything can go here
+    }
+
+    public void nameOfMethod_withoutParameter() {
+        // anything can go here
+    }
+
+    public String nameOfMethod_returnsSomething(String value) {
+        String result = value;
+
+        result += " something appended to the 'value' passed";
+
+        return result;
+    }
+
+    public Integer nameOfMethod_returnsSomething_withoutParameter() {
+        Integer result;
+        // anything can go here
+        result = 1 + 1;
+
+        return result;
+    }
+
     public Mouth getMouth() {
         return mouth;
     }
